@@ -9,7 +9,7 @@ defmodule RocketpayWeb.Router do
     pipe_through :api
 
     # Criando uma rota do tipo get para o endereço "/", em seguida a controller, e a action chamada index.
-    get "/", WelcomeController, :index
+    get "/:filename", WelcomeController, :index
   end
 
   # Enables LiveDashboard only for development
