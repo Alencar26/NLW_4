@@ -10,6 +10,8 @@ defmodule RocketpayWeb.Router do
 
     # Criando uma rota do tipo get para o endereço "/", em seguida a controller, e a action chamada index.
     get "/:filename", WelcomeController, :index
+
+    post "/users", UsersController, :create
   end
 
   # Enables LiveDashboard only for development
